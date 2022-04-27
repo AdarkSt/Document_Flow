@@ -1,0 +1,32 @@
+.loginPage{
+    padding: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    background-image: url("C:\Users\user.GRIGOR\Desktop\Diplomayin\document_flow\src\Pages\Login\Assets\pageBackground.svg");
+}
+
+.pageLogo{
+    width: 80px;
+    height: 80px;
+}
+
+.heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loginPageContent{
+    width: 30%;
+    height: fit-content;
+    padding: 40px;
+    border-radius: 3px;
+    border: 1px solid rgb(78, 72, 72);
+    background-color: rgba(139, 131, 131, 0.74);
+}

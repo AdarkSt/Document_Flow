@@ -1,0 +1,13 @@
+.docsTitle{
+    margin: auto;
+    margin-bottom: 10px;
+    color: rgb(238, 80, 112);
+}
+
+.userDocs{
+    margin: 10px;
+    margin-left: 0px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}

@@ -1,0 +1,14 @@
+.userInfo {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.userName {
+    color: rgb(238, 80, 112);
+}
+
+.userPosition {
+    color: rgb(38, 129, 120);
+}

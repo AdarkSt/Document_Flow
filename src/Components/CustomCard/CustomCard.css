@@ -1,0 +1,12 @@
+.CardImage{
+    width: 120px;
+    height: 130px;
+}
+
+.CardContent{
+    width: 130px;
+}
+
+.CustomCardDownloader{
+    text-decoration: none;
+}

@@ -1,0 +1,26 @@
+.userMenu {
+    list-style: none;
+}
+
+.myNav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.myLink{
+    color: rgb(61, 59, 59) !important;
+}
+
+.myLink:hover {
+    color: rgb(9, 59, 125) !important;
+}
+
+.myLink:active {
+    color: rgb(9, 59, 125) !important;
+}
+
+.menuIcons{
+    width: 35px !important;
+    height: 35px !important;
+}

@@ -1,0 +1,83 @@
+.myCarouselSend{
+    margin-left: 150px;
+    width: 700px;
+    height: 600px;
+}
+
+.myCaption{
+    position: relative;
+    top: 20px;
+    left: auto;
+    right: auto;
+    color: rgb(238, 80, 112);
+    text-align: center;
+}
+
+.myDescription{
+    color: rgb(38, 129, 120);
+}
+
+.carouselImage{
+    width: 250px;
+    height: 200px;
+    position: relative;
+    left: 220px;
+}
+
+.myNextIcon{
+    background-image: url(C:\Users\user.GRIGOR\Desktop\Diplomayin\document_flow\src\Assets\nextBtn.png);
+    width: 50px;
+    height: 50px;
+}
+
+.myPrevIcon{
+    background-image: url(C:\Users\user.GRIGOR\Desktop\Diplomayin\document_flow\src\Assets\prevBtn.png);
+    width: 50px;
+    height: 50px;
+}
+
+.myHref{
+    text-decoration: none;
+    font-size:large;
+    color: lightcoral;
+}
+
+/* .steplabel span{
+    color:rgb(16, 159, 215)
+} */
+
+.noDocsMessage{
+    color: lightcoral;
+    margin: 0 180px;
+    margin-left: 230px;
+    display: inline-block;
+    width: 600px;
+    text-align: center;
+}
+
+.noSendedDocsMessage{
+    color: lightcoral;
+    text-align: center;
+    padding: 0 10rem;
+}
+
+.noSendedDocsImg{
+    width: 300px ;
+    height: 250px;
+    margin: auto;
+}
+
+.noSendedDocsBlock{
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.accordionSend{
+    margin-top: 30px;
+}
+
+.accordionSendHeader button{
+    color: lightcoral;
+}

@@ -1,0 +1,19 @@
+.inputLogin{
+    height: 40px;
+    margin-bottom: 0px;
+    border-radius: 50px/50px !important;
+}
+
+.label{
+    margin-bottom: 0px;
+    color: rgb(255, 255, 255);
+}
+
+.error{
+    color: rgb(207, 20, 20);
+}
+
+.invalidInput{
+    border-color: red;
+    background-color: rgba(255, 0, 0, 0.041);
+}

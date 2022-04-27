@@ -1,0 +1,36 @@
+.side{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    padding: 5px;
+    border-right: 1px solid grey;
+}
+
+.layout{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    min-height: 630px;
+    max-height: 635px;
+}
+
+.pageLayout{
+    position: relative;
+    max-height: 800px;
+    min-height: 700px;
+    background-image: url("C:\Users\user.GRIGOR\Desktop\Diplomayin\document_flow\src\Assets\backgroundUser.jpg");
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main{
+    margin-left: 10px;
+}
+
+.layoutFooter{
+  
+}
