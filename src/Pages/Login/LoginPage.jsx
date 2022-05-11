@@ -9,7 +9,6 @@ import {toast} from "react-toastify"
 
 export const LoginPage = (props) => {
 
-    // const [user, setUser] = useState(null)
     const history = useHistory()
 
     const handleSubmit = async (values) =>{

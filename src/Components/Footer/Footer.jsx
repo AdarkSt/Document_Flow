@@ -22,6 +22,7 @@ export const Footer = props => {
                                 >
                                 <p className="info">Address: {contacts.address}</p>
                                 </Clipboard>}
+           
         </div>
     )
 }

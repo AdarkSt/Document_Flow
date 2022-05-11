@@ -1,10 +1,9 @@
 import { useLocation } from "react-router-dom"
 import { useState, useCallback, useEffect } from "react"
 
-import { getSenderDocuments } from "../../../Services/documentService"
-
 import { SendedDocs } from "../../../Components/SendedDocs/SendedDocs"
 import { Loading } from "../../../Components/Loading"
+import DocsService from "../../../Services/docsService"
 
 export const UserSendedDocs = props => {
 
@@ -15,15 +14,11 @@ export const UserSendedDocs = props => {
 
     const getSendedDocs = useCallback(async()=> {
         setLoading(true)
-        const response = await getSenderDocuments({
-            first_name:user.first_name,
-            last_name:user.last_name,
-            position:user.position
-        })
-        const docs = response.data
+        const response = await DocsService.getSendedDocs({sender_email:user.email})
+        const docs = await response.json()
         setSendedDocs(docs)
         setLoading(false)
-    },[user.first_name, user.last_name, user.position])
+    },[user.email])
 
     useEffect(()=>{
         getSendedDocs()

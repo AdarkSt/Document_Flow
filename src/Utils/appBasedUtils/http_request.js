@@ -1,12 +1,12 @@
 export const http_Request = async (URL, method, body="") => {
-    const url = "http://localhost:8000" + URL
+    const url = "http://localhost:5000/docs" + URL
     const options = {}
     options.method = method;
+    options.mode = "cors";
     options.headers = {
         "Content-Type":"application/json",
         "Content-Length": "true"
     }
-    
     if(body) {
         options.body = body
     }

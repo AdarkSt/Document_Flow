@@ -6,11 +6,13 @@
 
 .myCaption{
     position: relative;
-    top: 20px;
     left: auto;
     right: auto;
     color: rgb(238, 80, 112);
     text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .myDescription{
@@ -18,8 +20,8 @@
 }
 
 .carouselImage{
-    width: 250px;
-    height: 200px;
+    width: 210px;
+    height: 160px;
     position: relative;
     left: 220px;
 }
@@ -34,6 +36,33 @@
     background-image: url(C:\Users\user.GRIGOR\Desktop\Diplomayin\document_flow\src\Assets\prevBtn.png);
     width: 50px;
     height: 50px;
+}
+
+.myAcceptersInfoNextIcon{
+    background-image: url(C:\Users\user.GRIGOR\Desktop\Diplomayin\document_flow\src\Assets\nextAccepterBtn.png);
+    width: 40px;
+    height: 40px;
+}
+
+.myAcceptersInfoPrevIcon{
+    background-image: url(C:\Users\user.GRIGOR\Desktop\Diplomayin\document_flow\src\Assets\prevAccepterBtn.png);
+    width: 40px;
+    height: 40px;
+}
+
+.myCarouselAcceptersInfo{
+    width: 520px;
+    height: 230px;
+    z-index: 1;
+}
+
+.myAcceptersInfoCaption{
+    position: relative;
+    left: auto;
+    right: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .myHref{
@@ -75,7 +104,7 @@
 }
 
 .accordionSend{
-    margin-top: 30px;
+    margin-top: 10px;
 }
 
 .accordionSendHeader button{

@@ -2,7 +2,6 @@ import { Route, useLocation, useParams, useRouteMatch } from "react-router-dom"
 
 import { UserPageLayout } from "../Layoutes/UserPageLayout/UserPageLayout"
 import { UserDocuments } from "../UserDocuments"
-import { UserSendDocument } from "../UserSendDocument"
 import { UserResavedDocs } from "../UserResavedDocs"
 import { UserSendedDocs } from "../UserSendedDocs"
 import { ManageUser } from "../Admin/ManageUser/ManageUser"
@@ -12,7 +11,6 @@ const User = props => {
     
     return (
         <>  
-            {params.page === "requestes" && <UserSendDocument/>}
             {params.page === "resaved_docs" && <UserResavedDocs/>}
             {params.page === "documents" && <UserDocuments/>}
             {params.page === "sended_docs" && <UserSendedDocs/>} 

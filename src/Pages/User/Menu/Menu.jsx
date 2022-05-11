@@ -1,18 +1,29 @@
-import { NavLink, useRouteMatch } from "react-router-dom"
+import { NavLink, useHistory, useRouteMatch } from "react-router-dom"
 import { useLocation } from "react-router-dom"
 
 import NoteAddIcon from '@mui/icons-material/NoteAdd'
-import ContentPasteGoIcon from '@mui/icons-material/ContentPasteGo'
 import FileOpenIcon from '@mui/icons-material/FileOpen'
 import EventIcon from '@mui/icons-material/Event'
 import ManageAccountsIcon from '@mui/icons-material/ManageAccounts'
+import { Button } from "../../../Components/Material/Inputs/Button"
+import LogoutIcon from '@mui/icons-material/Logout';
 import "./Menu.css"
 
 export const Menu = props => {
 
     const location = useLocation()
     const {url} = useRouteMatch()
+    const history = useHistory()
     const globalUser = location.state
+
+    const handleLogOut = () => {
+        history.replace("/")
+    }
+
+    const logoutBtn = <div>
+        <LogoutIcon/>
+        Դուրս գալ
+    </div>
     
     return (
         <ul className="nav myNav">
@@ -25,17 +36,6 @@ export const Menu = props => {
                 >
                     Փաստաթղթերի ձևանմուշներ
                     <NoteAddIcon className="menuIcons"/>
-                </NavLink>
-            </li>
-            <li className="nav-item">
-                <NavLink  
-                    className="nav-link myLink"
-                    activeClassName="nav-link myLink active"
-                    to={{pathname:`${url}/requestes`, state:location.state}}
-                    exact
-                >
-                    Ուղարկել Փաստաթուղթ
-                    <ContentPasteGoIcon className="menuIcons"/>
                 </NavLink>
             </li>
             <li className="nav-item">
@@ -73,6 +73,7 @@ export const Menu = props => {
                     </NavLink>
                 </li>
             }
+            <Button onClick={handleLogOut} className="btn btn-danger logoutBtn" title={logoutBtn}/>
         </ul>
     )
 }

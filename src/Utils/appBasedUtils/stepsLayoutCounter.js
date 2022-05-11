@@ -1,5 +1,4 @@
-export const stepsLayoutCounter = (accepted) => {
-
+export const stepsLayoutCounter = (accepted, denied) => {
     let trueSteps = ""
 
     const steps = [
@@ -20,13 +19,13 @@ export const stepsLayoutCounter = (accepted) => {
         'Մերժված է ',
     ]
 
-    if(accepted === undefined) {
+    if(accepted === false) {
         trueSteps = steps
     }
     if(accepted === true) {
         trueSteps = acceptedSteps
     }
-    if(accepted === false) {
+    if(denied === true) {
         trueSteps = canceledSteps
     }
     return trueSteps
